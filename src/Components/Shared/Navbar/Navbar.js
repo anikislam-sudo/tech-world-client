@@ -10,28 +10,29 @@ const Navbar = () => {
   const items = [
     {
       key: "1",
-      label: <Link href="/cpu">Processor</Link>,
+      label: <Link href="/monitor">Monitor</Link>,
     },
     {
       key: "2",
-      label: <Link href="/motherboard">Motherboard</Link>,
+      label: <Link href="/cpu">Processor</Link>,
     },
     {
       key: "3",
-      label: <Link href="/ram">Ram</Link>,
+      label: <Link href="/motherboard">Motherboard</Link>,
     },
     {
       key: "4",
-      label: <Link href="/psu">Power Supply</Link>,
+      label: <Link href="/ram">Ram</Link>,
     },
     {
       key: "5",
-      label: <Link href="/storage">Storage Device</Link>,
+      label: <Link href="/psu">Power Supply</Link>,
     },
     {
       key: "6",
-      label: <Link href="/monitor">Monitor</Link>,
+      label: <Link href="/storage">Storage Device</Link>,
     },
+   
     {
       key: "7",
       label: <Link href="/others">Others</Link>,

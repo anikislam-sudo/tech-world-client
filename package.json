@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.2",
+    "@ant-design/icons": "^5.2.6",
+    "@reduxjs/toolkit": "^1.9.7",
     "antd": "^5.10.2",
     "daisyui": "^3.9.3",
     "next": "13.5.6",
