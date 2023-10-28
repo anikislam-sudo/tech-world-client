@@ -50,7 +50,7 @@ const ProductReview = ({ id }) => {
 
   return (
     <div className="max-w-7xl    mt-5">
-      <h3 className="text-xl font-medium mb-4 ">Reviews</h3>
+      <h3 className="text-xl font-medium mb-4 ">Comments</h3>
       <form className="flex gap-5 items-center" onSubmit={handleSubmit}>
         <div className="min-h-[30px] w-1/2">
           <input

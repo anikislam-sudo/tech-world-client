@@ -28,9 +28,19 @@ const PcBuildSlice = createSlice({
         state.storage = action.payload;
       }
     },
+
+    resetPcBuild: (state) => {
+      // Reset all component states to undefined
+      state.monitor = undefined;
+      state.cpu = undefined;
+      state.motherboard = undefined;
+      state.ram = undefined;
+      state.psu = undefined;
+      state.storage = undefined;
+    },
   },
 });
 
-export const { handlePcBuild } = PcBuildSlice.actions;
+export const { handlePcBuild,resetPcBuild } = PcBuildSlice.actions;
 
 export default PcBuildSlice.reducer;
