@@ -23,7 +23,7 @@ export default function Home({allProducts}) {
           Products
         </h2>
         <p className="text-center text-lg mb-1">Hurry Up!!!</p>
-        <p className="text-center mb-3 text-lg">Don't Miss the Deal</p>
+        <p className="text-center mb-3 text-lg">Dont Miss the Deal</p>
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 p-3">
           {allProducts?.map((product) => (
             <ProductCard product={product} key={product._id} />

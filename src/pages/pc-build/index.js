@@ -308,7 +308,7 @@ const PcBuildPage = () => {
               <td>
                 <div>
                   <div role="status" className="max-w-sm animate-pulse">
-                    <h1>{psu ? "Product Selected" : "Select a PSU"}</h1>
+                    <h1>{psu ? "Product Selected" : "Select a Power Supply"}</h1>
                   </div>
                 </div>
               </td>

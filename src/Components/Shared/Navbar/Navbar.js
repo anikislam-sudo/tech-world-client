@@ -41,9 +41,9 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="navbar bg-emerald-300 flex justify-between">
-      <div className="navbar-start">
-        <div className="dropdown">
+    <div className="navbar  bg-emerald-300 flex justify-between">
+      <div className="navbar-start ">
+        <div className="dropdown ">
           <label tabIndex={0} className="btn btn-slate-400 mr-2 lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -62,8 +62,17 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow  w-52"
+            className="menu menu-sm  bg-slate-300 dropdown-content mt-3 z-[1] p-2 shadow  w-52"
           >
+              <li>
+              <button
+                className=" text-black  shadow-md  px-2"
+                onClick={() => router.push("/")}
+              >
+                Home
+              </button>
+            </li>
+         
             <li>
               <Dropdown
                 className=" text-black  px-1  shadow-md   "
@@ -74,6 +83,7 @@ const Navbar = () => {
                 </a>
               </Dropdown>
             </li>
+             
             <li>
               <button
                 className=" text-black  shadow-md  px-2"
@@ -107,6 +117,14 @@ const Navbar = () => {
       </div>
       <div className="navbar-end gap-4 hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
+        <li>
+              <button
+                className=" mr-5 text-black text-lg    px-2"
+                onClick={() => router.push("/")}
+              >
+                Home
+              </button>
+            </li>
           <li>
             <Dropdown
               className=" mr-5 text-black text-lg   px-2   "
@@ -131,7 +149,7 @@ const Navbar = () => {
           {session?.user ? (
             <button
               onClick={() => signOut()}
-              className=" bg-zinc-900 shadow-md rounded-md px-2 py-1 cursor-pointer transition-all duration-200 hover:bg-zinc-900"
+              className=" bg-yellow-300 text-black shadow-md rounded-md px-2 py-1 cursor-pointer transition-all duration-200 hover:bg-emerald-300"
             >
               Logout
             </button>
